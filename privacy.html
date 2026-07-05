@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Site Block</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #7f8c8d;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #f4f6f7;
+            color: #34495e;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Site Block</h1>
+        <p><strong>Effective Date:</strong> July 5, 2026</p>
+
+        <h2>Overview</h2>
+        <p>Site Block: Block distractions and Boost productivity ("we", "our", or "the extension") helps you improve your focus by blocking distracting websites and optionally synchronizing your focus modes with Google Calendar. We are committed to protecting your privacy. This policy explains what information Site Block accesses, how it is used, and your control over your data.</p>
+
+        <h2>Contact Information</h2>
+        <p>If you have questions about this privacy policy or your data, please contact:</p>
+        <p>
+            <strong>Tahir Ahmad</strong><br>
+            Email: <a href="mailto:mobstar037@gmail.com">mobstar037@gmail.com</a>
+        </p>
+
+        <h2>Data Collection and Storage</h2>
+        <h3>Local Data Only</h3>
+        <p><strong>All data collected by Site Block is stored locally on your device</strong> using Chrome’s <code>storage.local</code> API. <strong>No data is ever transmitted to external servers</strong> owned or operated by us, except when you explicitly enable Google Calendar sync.</p>
+        
+        <p>Site Block stores locally:</p>
+        <ul>
+            <li><strong>Blocked sites list</strong> – Websites you choose to block</li>
+            <li><strong>Focus mode schedules</strong> – Your configured focus sessions</li>
+            <li><strong>Timer settings</strong> – Your preferred focus and break durations</li>
+            <li><strong>Strict mode passcode</strong> – Optional passcode to prevent disabling Site Block</li>
+            <li><strong>Mode definitions</strong> – Your focus blocks (recurring or one‑off)</li>
+            <li><strong>Excluded dates and exception events</strong> – Used for recurring mode management</li>
+            <li><strong>(Optional) Google Calendar event mapping</strong> – A local map between your modes and Google Calendar events, used only for sync</li>
+        </ul>
+
+        <h2>Google Calendar Integration (Optional)</h2>
+        <p>If you choose to enable Google Calendar synchronization, Site Block uses Google’s OAuth 2.0 to request permission to read and write events in a dedicated calendar (named “Site Block”) or your primary calendar (depending on your preference). This is done via Chrome’s secure <code>chrome.identity</code> API.</p>
+        
+        <h3>What is accessed:</h3>
+        <ul>
+            <li>The extension can read and write events in your selected Google Calendar to keep your focus modes and calendar events in sync.</li>
+            <li>It only accesses the calendar you explicitly authorize during the OAuth consent flow.</li>
+        </ul>
+
+        <h3>How data is handled:</h3>
+        <ul>
+            <li>No calendar data is sent to any third‑party server. All communication is directly between your browser and Google’s APIs.</li>
+            <li>The OAuth token is managed by Chrome and is never stored in extension storage; it is only used temporarily to make API calls.</li>
+            <li>You can revoke the extension’s access at any time via your Google Account’s “Third‑party apps with account access” page.</li>
+        </ul>
+
+        <h3>What we do not do:</h3>
+        <ul>
+            <li>We do not store, log, or transmit your calendar events, credentials, or any personal information to our own servers.</li>
+            <li>We do not share your calendar data with any third party.</li>
+        </ul>
+
+        <h2>What Site Block Accesses</h2>
+        <p>To provide its core functionality and optional sync, Site Block requires these Chrome permissions:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>All websites (<code>&lt;all_urls&gt;</code>)</strong></td>
+                    <td>To detect when you visit a blocked site</td>
+                </tr>
+                <tr>
+                    <td><strong>Tabs and browsing activity</strong></td>
+                    <td>To check open tabs against your block list</td>
+                </tr>
+                <tr>
+                    <td><strong>Web requests</strong></td>
+                    <td>To intercept and block attempts to load restricted sites</td>
+                </tr>
+                <tr>
+                    <td><strong>Scripting</strong></td>
+                    <td>To show focus reminders on blocked pages</td>
+                </tr>
+                <tr>
+                    <td><strong>Storage</strong></td>
+                    <td>To save your settings locally</td>
+                </tr>
+                <tr>
+                    <td><strong>Identity</strong></td>
+                    <td>(Optional) To authenticate with Google for Calendar sync</td>
+                </tr>
+                <tr>
+                    <td><strong>OAuth2</strong></td>
+                    <td>(Optional) To obtain permission for Calendar API access</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Third‑Party Resources</h2>
+        <p>Site Block loads styling and icons from CDNs:</p>
+        <ul>
+            <li><strong>Boxicons</strong> – via <code>unpkg.com</code></li>
+            <li><strong>Materialize CSS</strong> – via <code>cdnjs.cloudflare.com</code></li>
+        </ul>
+        <p>These CDNs may log your IP address and browser information according to their own privacy policies:</p>
+        <ul>
+            <li><a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare Privacy Policy</a></li>
+            <li><a href="https://unpkg.com/privacy-policy.html" target="_blank">Unpkg Privacy Policy</a></li>
+        </ul>
+        <p>No personal data from your Site Block settings is shared with these services.</p>
+
+        <h2>How Your Data Is Used</h2>
+        <p>Your locally stored data is used only to:</p>
+        <ul>
+            <li>Enforce your site blocking preferences</li>
+            <li>Activate focus mode according to your schedule</li>
+            <li>Maintain your timer settings</li>
+            <li>Verify your strict mode passcode when needed</li>
+            <li>Manage recurring focus modes and exceptions</li>
+            <li>(If enabled) Synchronize your modes with Google Calendar</li>
+        </ul>
+
+        <h2>Data Sharing</h2>
+        <p>We do <strong>not</strong>:</p>
+        <ul>
+            <li>Transmit your data to external servers (except for the optional Google Calendar sync, which sends data only to Google’s APIs as per your authorization)</li>
+            <li>Use analytics or tracking tools</li>
+            <li>Share data with advertisers or third parties</li>
+            <li>Collect browsing history beyond checking against your block list</li>
+        </ul>
+
+        <h2>Your Rights and Control</h2>
+        <p>You have full control:</p>
+        <ul>
+            <li><strong>View/Modify</strong> – All settings are accessible in the Site Block popup.</li>
+            <li><strong>Delete</strong> – Uninstalling Site Block automatically removes all locally stored data.</li>
+            <li><strong>Revoke Google Calendar access</strong> – Go to your Google Account → Security → Third‑party apps with account access → Remove Site Block.</li>
+            <li><strong>Clear all settings</strong> – Use the “Reset” option within the extension interface.</li>
+        </ul>
+
+        <h2>Children’s Privacy</h2>
+        <p>Site Block is not intended for children under 13. We do not knowingly collect information from children. If you believe a child has provided information through Site Block, please contact us.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>If this policy is updated, the “Effective Date” at the top will be revised. Continued use of Site Block after changes constitutes acceptance of the updated policy.</p>
+
+        <div class="footer">
+            <p>© 2026 Tahir Ahmad. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
